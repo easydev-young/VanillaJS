@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/icon.png" />
+</head>
+
+<body>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <header class="todoHeader">
+        <div class="todoHeader__weather niceBox">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main class="todoMain">
+        <div class="todoMain__loging niceBox hidden">
+            <form id="login-form">
+                <input required maxlength="15" value="" type="text" placeholder="What is your name?" />
+                <input type="submit" value="Log In" />
+            </form>
+        </div>
+        <div class="todoMain__greeting niceBox hidden">
+            <h1 id="greeting"></h1>
+            <form id="todo-form">
+                <input required minlength="1" maxlength="30" type="text" placeholder="Write a To Do and Press Enter">
+            </form>
+            <form id="image-form">
+                <input required minlength="1" maxlength="30" type="text"
+                    placeholder="Background keywords. korea, seoul">
+            </form>
+        </div>
+    </main>
+    <div class="todo-clock-box">
+        <div class="todo">
+            <div class="todoMain__todo-list  hidden">
+                <ul id="todo-list" class="niceBox"></ul>
+            </div>
+        </div>
+
+        <div class="clockBox niceBox">
+            <div class="clockBox__clock"><span class="c1"></span><span class="c2"></span></div>
+            <div><span class="d1"></span><span class="d2"></span></div>
+        </div>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greeings.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
